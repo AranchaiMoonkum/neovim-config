@@ -1,5 +1,8 @@
 require "carbide".setup {
-    style = { transparent = false },
+    style = {
+        transparent = false,
+        gutter = "solid",
+    },
     plugins = {
         ["telescope.nvim"] = false,
     },
