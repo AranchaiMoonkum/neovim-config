@@ -43,13 +43,7 @@ return {
     },
     {
         "saghen/blink.cmp",
-        dependencies = {
-            { "L3MON4D3/LuaSnip", version = "v2.*" },
-            {
-                "xzbdmw/colorful-menu.nvim",
-                config = function() require "plugins.ui.colorful" end,
-            }
-        },
+        dependencies = { "L3MON4D3/LuaSnip", version = "v2.*" },
         version = "*",
         config = function() require "plugins.lang.completion" end,
     },
