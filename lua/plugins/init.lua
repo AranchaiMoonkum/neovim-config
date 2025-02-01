@@ -33,7 +33,20 @@ return {
     },
     {
         "neovim/nvim-lspconfig",
+        dependencies = "saghen/blink.cmp",
         config = function() require "plugins.lang.lsp" end,
+    },
+    {
+        "saghen/blink.cmp",
+        dependencies = {
+            { "L3MON4D3/LuaSnip", version = "v2.*" },
+            {
+                "xzbdmw/colorful-menu.nvim",
+                config = function() require "plugins.ui.colorful" end,
+            }
+        },
+        version = "*",
+        config = function() require "plugins.lang.completion" end,
     },
 
     -- themes
