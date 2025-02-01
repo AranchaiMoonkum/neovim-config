@@ -21,6 +21,21 @@ return {
         config = function() require "gitsigns".setup {} end,
     },
 
+    -- language
+    {
+        "folke/lazydev.nvim",
+        ft = "lua", -- only load on lua files
+        opts = {
+            library = {
+                { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+            },
+        },
+    },
+    {
+        "neovim/nvim-lspconfig",
+        config = function() require "plugins.lang.lsp" end,
+    },
+
     -- themes
     {
         "ferdinandrau/carbide.nvim",
