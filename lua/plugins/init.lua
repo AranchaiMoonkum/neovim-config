@@ -1,4 +1,16 @@
 return {
+     {
+        "nvim-telescope/telescope.nvim",
+        branch = "0.1.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            {
+                "nvim-telescope/telescope-fzf-native.nvim",
+                build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
+            },
+        },
+        config = function() require "plugins.ui.telescope" end,
+    },
     {
         "lewis6991/gitsigns.nvim",
         config = function() require "gitsigns".setup {} end,
