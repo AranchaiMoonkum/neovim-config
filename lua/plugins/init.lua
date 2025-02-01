@@ -23,6 +23,11 @@ return {
 
     -- language
     {
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+        config = function() require "plugins.lang.treesitter" end,
+    },
+    {
         "folke/lazydev.nvim",
         ft = "lua", -- only load on lua files
         opts = {
