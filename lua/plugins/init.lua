@@ -56,4 +56,11 @@ return {
         priority = 1000,
         config = function() require "plugins.themes.carbide" end,
     },
+
+    -- extras
+    {
+        "vyfor/cord.nvim",
+        build = ":Cord update",
+        config = function() require "plugins.ui.cord" end,
+    },
 }
