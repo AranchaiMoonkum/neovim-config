@@ -1,6 +1,11 @@
 return {
     -- ux/ui
     {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        config = function() require "plugins.ui.indentation" end,
+    },
+    {
         "nvim-telescope/telescope.nvim",
         branch = "0.1.x",
         dependencies = {
