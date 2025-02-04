@@ -1,10 +1,6 @@
 return {
     -- ux/ui
     {
-        "folke/snacks.nvim",
-        config = function() require "plugins.ui.snacks" end,
-    },
-    {
         "nvim-telescope/telescope.nvim",
         branch = "0.1.x",
         dependencies = {
