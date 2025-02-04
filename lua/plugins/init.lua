@@ -64,4 +64,9 @@ return {
         build = ":Cord update",
         config = function() require "plugins.ui.cord" end,
     },
+    {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = true,
+    },
 }
