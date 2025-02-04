@@ -11,18 +11,6 @@ require "blink.cmp".setup {
                 columns = {
                     { "kind_icon", gap = 1 },
                     { "label",     gap = 1 },
-                    -- { "label",     "label_description", gap = 1 },
-                    -- { "kind",      gap = 1 },
-                },
-                components = {
-                    label = {
-                        text = function(ctx)
-                            return require "colorful-menu".blink_components_text(ctx)
-                        end,
-                        highlight = function(ctx)
-                            return require "colorful-menu".blink_components_highlight(ctx)
-                        end,
-                    },
                 },
             },
         },
