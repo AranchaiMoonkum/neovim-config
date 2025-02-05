@@ -11,6 +11,15 @@ require "blink.cmp".setup {
                 columns = {
                     { "kind_icon", gap = 1 },
                     { "label",     gap = 1 },
+                    { "provider" },
+                },
+                components = {
+                    provider = {
+                        text = function(ctx)
+                            return "[" .. ctx.item.source_name:sub(1, 3):upper() .. "]"
+                        end,
+                        highlight = "BlinkCmpKindLabel",
+                    },
                 },
             },
         },
