@@ -73,4 +73,13 @@ return {
         event = "VeryLazy",
         enabled = vim.fn.has("nvim-0.10.0") == 1
     },
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        },
+    },
 }
