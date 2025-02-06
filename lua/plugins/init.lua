@@ -21,6 +21,11 @@ return {
         "lewis6991/gitsigns.nvim",
         config = function() require "gitsigns".setup {} end,
     },
+    {
+        "echasnovski/mini.statusline",
+        version = false,
+        config = function() require "plugins.ui.statusline" end,
+    },
 
     -- language
     {
