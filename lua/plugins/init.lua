@@ -66,9 +66,15 @@ return {
     -- themes
     {
         "ferdinandrau/carbide.nvim",
-        lazy = false,
+        lazy = true,
         priority = 1000,
         config = function() require "plugins.themes.carbide" end,
+    },
+    {
+        "sainnhe/gruvbox-material",
+        lazy = false,
+        priority = 1000,
+        config = function() require "plugins.themes.gruvbox-material" end,
     },
 
     -- extras
