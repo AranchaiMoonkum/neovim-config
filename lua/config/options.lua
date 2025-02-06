@@ -20,6 +20,6 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
-vim.opt.cursorline = true
+-- vim.opt.cursorline = true
 
 vim.opt.fillchars = { eob = " " }
