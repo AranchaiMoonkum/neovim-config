@@ -22,6 +22,15 @@ return {
         config = function() require "gitsigns".setup {} end,
     },
     {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        },
+    },
+    {
         "echasnovski/mini.statusline",
         version = false,
         config = function() require "plugins.ui.statusline" end,
@@ -77,14 +86,5 @@ return {
         "folke/ts-comments.nvim",
         event = "VeryLazy",
         enabled = vim.fn.has("nvim-0.10.0") == 1
-    },
-    {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v3.x",
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-            "MunifTanjim/nui.nvim",
-        },
     },
 }
